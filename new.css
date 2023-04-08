@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+.clock {
+    background-color: white;
+    height: 300px;
+    width: 300px;
+    border-radius: 200px;
+    border-color: black;
+    border: 2px solid pink;
+    box-shadow: 0 0 50px blue;
+
+}
+.neon-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff,
+                 0 0 30px #fff,
+                 0 0 40px #ff00de,
+                 0 0 70px #ff00de,
+                 0 0 80px #ff00de,
+                 0 0 100px #ff00de,
+                 0 0 150px #ff00de;
+    animation: neon 1.5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes neon {
+    from {
+      text-shadow: 0 0 10px #fff,
+                   0 0 20px #fff,
+                   0 0 30px #fff,
+                   0 0 40px #ff00de,
+                   0 0 70px #ff00de,
+                   0 0 80px #ff00de,
+                   0 0 100px #ff00de,
+                   0 0 150px #ff00de;
+    }
+    to {
+      text-shadow: 0 0 20px #fff,
+                   0 0 30px #fff,
+                   0 0 40px #fff,
+                   0 0 50px #ff00de,
+                   0 0 80px #ff00de,
+                   0 0 90px #ff00de,
+                   0 0 110px #ff00de,
+                   0 0 160px #ff00de;
+    }
+  }
+  
